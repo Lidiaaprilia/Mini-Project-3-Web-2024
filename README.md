@@ -1,4 +1,4 @@
-# Pawtique - Petshop E-commerce Website 
+# Pawtique - Petshop E-commerce Website With PHP, MySQL, CSS, JS
 ![Screenshot 2024-04-09 165914](https://github.com/Lidiaaprilia/Mini-Project-3-Web-2024/assets/126661491/afa6f194-3ce1-4227-af82-f35f8d77442d)
 
 [Pawtique] adalah destinasi online utama bagi para pecinta kucing untuk memenuhi segala kebutuhan makanan kucing mereka. Sebagai toko online yang eksklusif untuk produk-produk kucing, Pawtique menawarkan beragam makanan kucing berkualitas tinggi dari merek-merek terpercaya di industri hewan peliharaan.

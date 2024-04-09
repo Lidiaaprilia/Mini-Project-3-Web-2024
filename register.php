@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
       }else{
          mysqli_query($conn, "INSERT INTO `users`(name, email, password) VALUES('$name', '$email', '$pass')") or die('query failed');
          $message[] = 'registered successfully!';
-         header('location:login.php');
+         header('location:index.php');
       }
    }
 
@@ -130,7 +130,7 @@ if(isset($message)){
       <input type="password" name="pass" class="box" placeholder="Password" required>
       <input type="password" name="cpass" class="box" placeholder="Repeat Password" required>
       <input type="submit" class="btn" name="submit" value="Register Now">
-      <p>Already have an account? <a href="login.php">Login Now</a></p>
+      <p>Already have an account? <a href="index.php">Login Now</a></p>
    </form>
 
 </section>

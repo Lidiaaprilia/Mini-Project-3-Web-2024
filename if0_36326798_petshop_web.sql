@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Apr 04, 2024 at 05:25 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: sql310.infinityfree.com
+-- Generation Time: Apr 08, 2024 at 11:19 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.2.22
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `petshop_web`
+-- Database: `if0_36326798_petshop_web`
 --
 
 -- --------------------------------------------------------
@@ -35,7 +36,7 @@ CREATE TABLE `cart` (
   `price` int(100) NOT NULL,
   `quantity` int(100) NOT NULL,
   `image` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -50,7 +51,7 @@ CREATE TABLE `message` (
   `email` varchar(100) NOT NULL,
   `number` varchar(12) NOT NULL,
   `message` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `message`
@@ -79,7 +80,7 @@ CREATE TABLE `orders` (
   `total_price` int(100) NOT NULL,
   `placed_on` varchar(50) NOT NULL,
   `payment_status` varchar(20) NOT NULL DEFAULT 'pending'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `orders`
@@ -101,7 +102,7 @@ CREATE TABLE `products` (
   `details` varchar(500) NOT NULL,
   `price` int(100) NOT NULL,
   `image` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `products`
@@ -124,7 +125,7 @@ CREATE TABLE `users` (
   `email` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   `user_type` varchar(20) NOT NULL DEFAULT 'user'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
@@ -149,7 +150,7 @@ CREATE TABLE `wishlist` (
   `name` varchar(100) NOT NULL,
   `price` int(100) NOT NULL,
   `image` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables

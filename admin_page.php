@@ -28,14 +28,14 @@ if(!isset($admin_id)){
 
    <style>
       .dashboard .box-container .box a{
-   padding:1.5px;
-   border-radius: .5rem;
-   background-color: var(--light-bg);
-   color:var(--light-color);
-   border:var(--border);
-   margin-top: 2rem;
-   font-size: 2rem;
-}
+        padding:1.5px;
+        border-radius: .5rem;
+        background-color: var(--light-bg);
+        color:var(--light-color);
+        border:var(--border);
+        margin-top: 2rem;
+        font-size: 2rem;
+      }
    </style>
 
 </head>
@@ -71,7 +71,7 @@ if(!isset($admin_id)){
             };
          ?>
          <h3>$<?php echo $total_completes; ?>/-</h3>
-         <h3>-----------</h3>
+         <h3>---------</h3>
          <a href="admin_orders.php" style="background-color: pink;">Completed Payments</a>
       </div>
 

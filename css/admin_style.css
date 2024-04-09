@@ -70,7 +70,7 @@ section{
    border-radius: .5rem;
    margin-top: 1rem;
    font-size: 1.8rem;
-   color:var(--white);
+   color:var(--black);
    cursor: pointer;
    padding:1rem 3rem;
    text-transform: capitalize;
@@ -126,27 +126,19 @@ section{
 }
 
 .option-btn{
-   background-color: var(--blue);
+   background-color: var(--black);
 }
 
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover{
-   background-color: var(--black);
+   background-color: var(--blue);
 }
 
 @keyframes fadeIn{
    0%{
       transform: translateY(1rem);
    }
-}
-
-.header{
-   position: sticky;
-   top:0; left:0; right:0;
-   z-index: 1000;
-   background-color: var(--pink);
-   box-shadow: var(--box-shadow);
 }
 
 .header .flex{
@@ -194,10 +186,6 @@ section{
    color:var(--light-color);
 }
 
-.header .flex .account-box div a{
-   color:var(--blue);
-}
-
 .header .flex .account-box div a:hover{
    text-decoration: underline;
 }
@@ -216,7 +204,7 @@ section{
 .header .flex .navbar a{
    margin:0 1rem;
    font-size: 2rem;
-   color:var(--light-color);
+   color:var(--black);
 }
 
 .header .flex .navbar a:hover{
@@ -249,7 +237,7 @@ section{
 .dashboard .box-container .box{
    text-align: center;
    border:var(--border);
-   background-color: var(--pink);
+   background-color: #fff;
    box-shadow: var(--box-shadow);
    padding:2rem;
    border-radius: .5rem;
@@ -498,24 +486,6 @@ section{
 .messages .box-container .box p span{
    color:var(--pink);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media queries  */
 

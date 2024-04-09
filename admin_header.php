@@ -11,21 +11,52 @@ if(isset($message)){
 }
 ?>
 
-<header class="header">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>header</title>
 
-   <div class="flex">
+   <!-- custom admin css file link  -->
+   <link rel="stylesheet" href="css/admin_style.css">
 
-      <a href="admin_page.php" class="logo">Admin<span>Dashboard</span></a>
+   <style>
+      .header{
 
-      <nav class="navbar">
-         <a href="admin_page.php">Home</a>
-         <a href="admin_products.php">Products</a>
-         <a href="admin_orders.php">Orders</a>
-         <a href="admin_users.php">Users</a>
-         <a href="admin_contacts.php">Messages</a>
-      </nav>
+         position: sticky;
+         top:0; left:0; right:0;
+         z-index: 1000;
+         background-color: var(--white);
+         box-shadow: var(--box-shadow);
+      }
+
+      .header .flex .account-box div a{
+         color:var(--pink);
+      }
+   </style>
+
+</head>
+<body>
+   
+   <header class="header">
+
+      <div class="flex">
+
+
+         <a href="admin_page.php" class="logo">Admin<span>Dashboard</span></a>
+
+         <nav class="navbar">
+
+            <a href="admin_page.php">Home</a>
+            <a href="admin_products.php">Products</a>
+            <a href="admin_orders.php">Orders</a>
+            <a href="admin_users.php">Users</a>
+            <a href="admin_contacts.php">Messages</a>
+         </nav>
 
       <div class="icons">
+
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="user-btn" class="fas fa-user"></div>
       </div>
@@ -37,6 +68,10 @@ if(isset($message)){
          <div>New <a href="index.php">Login</a> | <a href="register.php">Register</a> </div>
       </div>
 
-   </div>
+      </div>
 
-</header>
+   </header>
+   
+</body>
+</html>
+
